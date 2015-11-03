@@ -1,0 +1,20 @@
+<ion-view>
+	<ion-nav-title>
+      <img src="images/icon_navbar_leather_5.png" height="50px" style="margin-top: 5px;">
+    </ion-nav-title>
+  <ion-pane id="gallery-pane">
+    <ion-content overflow-scroll="true">
+		<div style="height: 40px"></div>
+  		<div class="row" ng-repeat="image in galleryImages track by $index" ng-if="$index % 4 == 0">
+		    <div ng-repeat="i in [$index, $index + 1, $index + 2, $index + 3]" ng-if="galleryImages[i] != null" class="col col-25">
+		    	<a ng-click="showImage(i)">
+		    		<div style="border-radius: 50%; width:60px; height:60px; overflow: hidden;">
+		    			<img class="product-thumbnail" ng-src="images/gallery/image{{i+1}}.png">
+		    		</div>
+		    	</a>
+		    </div>
+		</div>
+    
+    </ion-content>
+  </ion-pane>
+</ion-view>

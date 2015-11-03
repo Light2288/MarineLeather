@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>IonicTutorial</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+			    		
+			<link href="css/ionic.css" rel="stylesheet">
+    		
+    		<script src="angular-ui/ionic.bundle.min.js"></script>
+    		
+    		<script src="angular/angular-touch.js"></script>
+    		<script src="angular/angular-ios9-uiwebview.patch.js"></script>
+    		<script src="angular/angular-scroll.js"></script>
+    		
+    		<!-- <script src="angular/ngTouch/directive/ngSwipe.js"></script>
+    		<script src="angular/ngTouch/directive/ngClick.js"></script>
+    		<script src="angular/ngTouch/swipe.js"></script>
+    		<script src="angular/ngTouch/touch.js"></script> 
+    		<script src="angular/angular-smooth-scroll.js"></script> -->
+    		
+    		
+    		<link rel="stylesheet" href="css/main.css">
+
+    	</head>
+    	<body ng-app="appMarineLeather" ng-controller="MainCtrl" style="margin-top: -20px">
+			<ion-nav-bar class="custom-bar">
+				<!-- Automatic back button --> 
+				<ion-nav-buttons side="left">
+    				<button class="button button-positive button-icon icon ion-chevron-left" ng-click="backButton.func()" ng-show="backButton.show"></button>
+				</ion-nav-buttons>
+			</ion-nav-bar>
+			<!-- Contains our views -->
+    		<ion-nav-view></ion-nav-view>
+    			
+			<div class="tabs tabs-icon-top tab-icon-top-custom">
+			  <a class="tab-item tab-item-custom" ng-click="activeChiSiamoTab()" ng-style="chiSiamoTabStyle"
+			  ui-sref="chisiamo">
+			  	<div width="100%">
+			    	<img src="{{tabChiSiamoIcon}}" width="25px" height="25px"></img>
+			    </div>
+			    Chi Siamo
+			  </a>
+			  <a class="tab-item tab-item-custom" ng-click="activeProdottiTab()" ng-style="prodottiTabStyle"
+			  ui-sref="prodotti">
+			    <div width="100%">
+			    	<img src="{{tabProdottiIcon}}" width="20px" height="25px"></img>
+			    </div>
+			    Prodotti
+			  </a>
+			  <a class="tab-item tab-item-custom" ng-click="activeMyLeatherTab()" ng-style="myLeatherTabStyle"
+			  ui-sref="myleather">
+			    <div width="100%">
+			    	<img src="{{tabMyLeatherIcon}}" width="25px" height="25px"></img>
+			    </div>
+			    My Leather
+			  </a>
+			  <a class="tab-item tab-item-custom" ng-click="activeGalleryTab()" ng-style="galleryTabStyle"
+			  ui-sref="gallery">
+			    <div width="100%">
+			    	<img src="{{tabGalleryIcon}}" width="30px" height="25px"></img>
+			    </div>
+			    Gallery
+			  </a>
+			  <a class="tab-item tab-item-custom" ng-click="activeContactsTab()" ng-style="contactsTabStyle"
+			  ui-sref="contacts">
+			    <div width="100%">
+			    	<img src="{{tabContactsIcon}}" width="25px" height="25px"></img>
+			    </div>
+			    Contatti
+			  </a>
+			</div>
+							
+			<script src="modules/moduleMarineLeather.js"></script>
+			<script src="controllers/homeCtrl.js"></script>
+			<script src="controllers/ContactsCtrl.js"></script>
+			<script src="controllers/ChiSiamoCtrl.js"></script>
+			<script src="controllers/ChiSiamo2Ctrl.js"></script>
+			<script src="controllers/ChiSiamo3Ctrl.js"></script>
+			<script src="controllers/ProdottiCtrl.js"></script>
+			<script src="controllers/ProdottiSpecialCtrl.js"></script>
+			<script src="controllers/MyLeatherCtrl.js"></script>
+			<script src="controllers/GalleryCtrl.js"></script>
+    		<script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    	</body>
+</html>

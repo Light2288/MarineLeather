@@ -1,0 +1,22 @@
+<ion-view>
+	<ion-nav-title>
+      <img src="images/icon_navbar_leather_5.png" height="50px" style="margin-top: 5px;">
+    </ion-nav-title>
+  <ion-pane>
+  	<ion-content overflow-scroll="true">
+    	<div style="height: 40px"></div>
+		
+		<div class="list" ng-repeat="x in chiSiamoItems">
+			<p class="title title-chisiamo">{{x.title}}</p>
+			<div ng-class-odd="'circle-img-chisiamo-odd'" ng-class-even="'circle-img-chisiamo-even'">
+				<img src="images/chi-siamo-images/{{x.image}}.png" style="width:100%; height:100%;"></img>
+			</div>
+			<p class="text-small text-small-chisiamo">{{x.text}}</p>
+			
+			<br>
+		</div>
+
+	<div style="height: 30px"></div>
+	</ion-content>
+  </ion-pane>
+</ion-view>

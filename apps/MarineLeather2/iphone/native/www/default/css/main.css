@@ -1,0 +1,499 @@
+
+/* Stylesheet content from css/main.css in folder common */
+body {
+  position: initial;
+}
+
+.bar.custom-bar {
+	/*border-color: rgb(124,53,23);
+    background-color: rgb(124,53,23);
+    color: #fff; */
+    
+    background-image: url("../images/background-navbar-2.png");
+    background-size: 100%;
+}
+
+.tab-icon-top-custom {
+	padding-top: 4px;
+}
+
+.item-custom-contacts {
+    text-overflow: initial;
+    overflow: initial;
+    white-space: initial;
+    color: #666;
+    border-color: rgb(124,53,23);
+}
+
+.item-no-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.has-footer {
+	    bottom: 50px;
+}
+
+.tab-item-custom {
+	opacity: 1;
+}
+
+.col-contacts {
+	font-size: 32px;
+	color: rgb(124,53,23);;
+}
+
+.row-home {
+	height: 50%;
+}
+
+.home-text {
+	color: #2563FF;
+    font-size: larger;
+}
+
+.chi-siamo-image {
+    width: 90%;
+    display:block;
+   	margin:auto;
+}
+
+.item-prodotti {
+	padding-left: 92px;
+	min-height: 92px;
+}
+
+.item-prodotti-first {
+	background-color: blue;
+}
+
+.list-prodotti {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.item-prodotti.activated {
+	background-color: rgba(124,53,23,0.33)
+}
+
+.item .text-small {
+	white-space: normal;
+	font-size: 14px;
+}
+
+.item .title {
+	font-size: 18px;
+	color: rgb(124,53,23);
+}
+
+.image-prodotti-list {
+	min-height: 60px;
+	min-width: 60px;
+}
+
+.item-divider-products {
+	background-image: url("../images/background-navbar-2.png");
+    background-size: 100%;
+	background-color: rgb(124, 53, 23);
+	color: white;
+	border-color: rgb(124, 53, 23);
+	text-align: center;
+	font-size: 18px;
+}
+
+.product-thumbnail {
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.product-thumbnail-text {
+	font-size: 10px;
+    line-height: initial;
+    margin-bottom: 0px;
+    min-height: 25px;
+    padding-top: 3px;
+}
+
+.card-dettaglio-prodotti {
+	background-color: transparent;
+	box-shadow: initial;
+	margin-top:0px;
+}
+
+.item-dettaglio-prodotti {
+	background-color: transparent;
+	border-width: 0px;
+	background-image: none;
+	
+}
+
+.tabs.item-dettaglio-prodotti {
+	background-image: initial;
+}
+
+.rounded-button {
+	border-radius: 50%;
+	background-color: #rgb(124,53,23);
+}
+
+.col-button-myleather {
+	text-align: center;
+}
+
+.button-myleather {
+	max-height: 70px;
+}
+
+.list:last-child {
+  margin-bottom: 10px;
+}
+
+.col-myleather {
+	float: left;
+	display: flex;
+	
+}
+
+.color-circle-myleather {
+	background-color: white;
+	width:45px;
+	height:45px;
+	min-width: initial;
+	min-height: initial;
+	max-width:45px;
+	max-height:45px;
+	border-radius: 50%;
+	border: 1pt solid rgb(124,53,23);
+	display: flex;
+    justify-content: center;
+    /*margin: auto;*/
+}
+
+.inner-color-circle-myleather {
+	background-color: white;
+	width:35px;
+	height:35px;
+	border-radius: 50%;
+	margin: auto;
+	align-self: center;
+}
+
+.button-clear.button-ok-myleather {
+	min-width: initial;
+	min-height: initial;
+	max-width:45px;
+	max-height:45px;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	width: 45px;
+	height: 45px;
+	background-color: rgb(124,53,23);
+	border-radius: 50%;
+	color: white;
+	font-weight:lighter;
+	font-size: 15px;
+	margin: auto;
+	float: right;
+}
+
+.trash-image {
+	min-width: initial;
+	min-height: initial;
+	max-width:24px;
+	max-height:24px;
+	width: 24px;
+	height: 24px;
+	background-image: url("../images/my-leather-images/trash.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	align-self: center;
+	margin-left: 7px;
+}
+
+.text-myleather {
+	color: #666;
+	text-align: center;
+	margin: auto;
+}
+
+.canvas-myleather {
+	min-width: initial;
+	min-height: initial;
+	width:90%;
+	height: 90%;
+	max-width:90%;
+	max-height:90%;
+	margin: auto;
+}
+
+.image-modal {
+    width: 100% !important;
+    height: 100%;
+    top: 0 !important;
+    left: 0 !important;
+}
+ 
+.transparent {
+	background: rgba(0,0,0,0.33) !important
+}
+
+
+.myleather-order-image {
+	display: block;
+	width: 70px;
+	margin: 0 auto;
+}
+
+.gallery-fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+.myleather-fullscreen-image {
+    max-width: 75%;
+    max-height: 75%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.back-arrow-product-detail {
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+}
+
+.forward-arrow-product-detail {
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+}
+
+.row-product-detail {
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: fixed;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;	
+}
+
+.item-title-myleather-detail {
+	border-color: transparent;
+	background-color: transparent;
+	width: 100%;
+	color: rgb(124, 53, 23) !important;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-pager {
+	bottom: 70px;
+}
+
+.slider-pager .slider-pager-page {
+	color: rgb(124,53,23);
+}
+
+.text-small {
+	white-space: normal;
+	font-size: 14px;
+	color: #666;
+}
+
+.title {
+	font-size: 18px;
+	color: rgb(124,53,23);
+}
+
+.title-chisiamo {
+	text-align: center;
+}
+
+.circle-img-chisiamo-odd {
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+	display: inline-block;
+  	vertical-align: middle;
+}
+
+.circle-img-chisiamo-even {
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: right;
+	display: inline-block;
+ 	vertical-align: middle;
+}
+
+.contacts-social-image {
+	display: block;
+	width: 40px;
+	margin: 0 auto;
+}
+
+/*.item-divider-contacts {
+	color: #FFF !important;
+	background-color: rgb(124,53,23);
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-color: rgb(124,53,23);
+}*/
+
+.list-contatti {
+	color: #666;
+}
+
+.list-inset .item:first-child {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.list-inset .item:last-child {
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.text-small-chisiamo {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.row-contacts {
+	padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+	
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.item-divider-contacts {
+	background-image: url("../images/background-navbar-2.png");
+    background-size: 100%;
+	background-color: rgb(124, 53, 23);
+	color: white;
+	border-color: rgb(124, 53, 23);
+	text-align: center;
+	font-size: 18px;
+}
+
+.contatcs-par {
+	font-size: 16px;
+	text-decoration:none;
+	border:none;
+	color:#000000;
+}
+
+.contatcs-icon-text {
+	text-align: center;
+	font-size: 10px;
+	color: rgb(124, 53, 23);
+}
+
+.richiedi-campione-label {
+	font-size: 12px;
+	text-align: center;
+}
+/* Stylesheet content from css/main.css in folder iphone */
+
+/* this CSS file extends the application CSS file found under common\css */
+
+/*Optional iOS 7 status bar filler*/
+#wl_ios7bar{
+	background-color: white;
+	height: 15pt;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+}
+body.wl_ios7{
+	padding-top: 15pt;
+}

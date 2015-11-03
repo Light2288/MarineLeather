@@ -1,0 +1,64 @@
+<ion-view>
+  <ion-nav-title>
+      <img src="images/icon_navbar_leather_5.png" height="50px" style="margin-top: 5px;">
+    </ion-nav-title>
+  <ion-pane>
+    <ion-content overflow-scroll="true" delegate-handle="myLeatherScrollDelegate">
+    	<div style="height: 40px"></div>
+        
+		<div class="row" ng-hide="hideInitialText">
+        	<p class="text-small text-myleather" style="padding-bottom: 10px">Scatta una foto o scegli un'immagine dal tuo dispositivo</p>
+        </div>
+        
+        <div class="row" id="buttons-myleather-camera">
+		  	<div class="col col-button-myleather">
+		  		<button class="button button-clear button-myleather" ng-click=capturePhoto()>
+		  			<img src="images/my-leather-images/camera_icon_myleather.png" width="60px" height="60px"></img>
+		  		</button>
+			</div>
+		  	<div class="col col-button-myleather">
+		  		<button class="button button-clear button-myleather" ng-click=getPhotoFromLibrary()>
+		  			<img src="images/my-leather-images/gallery_icon_myleather.png" width="60px" height="60px"></img>
+		  		</button>
+			</div>
+			
+		</div>
+		<div id="canvas-text-myleather"></div>
+        
+        <div class="row" ng-hide="hideCanvas">
+        	<p class="text-small text-myleather">Clicca sulla foto sottostante per selezionare fino a un massimo tre colori, poi clicca su OK per visualizzare
+        	una selezione di prodotti abbinati ai colori scelti</p>
+        </div>
+        <div class="row" ng-hide="hideCanvas" style="margin-top: 10px; margin-bottom: 10px; padding-left: 10px; padding-right: 10px;">
+        	<div class="col col-25 col-myleather">
+        		<div class="color-circle-myleather" id="colorCircle-1" ng-click="selectCircle(1)">
+        			<div class="inner-color-circle-myleather" id="inner-colorCircle-1"></div>
+        		</div>
+        		<div class="trash-image" ng-show="colorCircleEnabled[0]" ng-click="deleteCircle(1)"></div>
+        	</div>
+        	<div class="col col-25 col-myleather">
+        		<div class="color-circle-myleather" id="colorCircle-2" ng-click="selectCircle(2)">
+        			<div class="inner-color-circle-myleather" id="inner-colorCircle-2"></div>
+        		</div>
+        		<div class="trash-image" ng-show="colorCircleEnabled[1]" ng-click="deleteCircle(2)"></div>
+        	</div>
+        	<div class="col col-25 col-myleather">
+        		<div class="color-circle-myleather" id="colorCircle-3" ng-click="selectCircle(3)">
+        			<div class="inner-color-circle-myleather" id="inner-colorCircle-3"></div>
+        		</div>
+        		<div class="trash-image" ng-show="colorCircleEnabled[2]" ng-click="deleteCircle(3)"></div>
+        	</div>
+        	<div class="col col-25 ">
+        		<button class="button button-clear button-ok-myleather" ng-disabled="oneColorCircleEnabled()" ng-click=capturePhoto()>
+	  				OK
+	  			</button>
+        	</div>
+        </div>
+        <div class="row" ng-hide="hideCanvas">
+	        	<canvas id="myCanvas" class="canvas-myleather" ng-click="getPixelColor($event)"></canvas>
+        </div>
+        
+        <div style="height: 50px"></div>  
+    </ion-content>
+  </ion-pane>
+</ion-view>

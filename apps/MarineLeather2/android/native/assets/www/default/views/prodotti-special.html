@@ -1,0 +1,31 @@
+<ion-view>
+	<ion-nav-title>
+      <img src="images/icon_navbar_leather_5.png" height="50px" style="margin-top: 5px;">
+    </ion-nav-title>
+  <ion-pane id="myleather-special-pane">
+    <ion-content overflow-scroll="true">
+	<div style="height: 30px"></div>
+		
+		<div class="list" ng-repeat="(xIndex,x) in products">
+		
+			<div class="item item-divider item-divider-products">
+		  	{{x.categoryName}}
+		  	</div>
+		
+			<div class="row" ng-repeat="product in x.productsArray track by $index" ng-if="$index % 5 == 0">
+			    <div ng-repeat="i in [$index, $index + 1, $index + 2, $index + 3, $index + 4]" ng-if="x.productsArray[i] != null" class="col col-20">
+			    	<a ng-click="showProductDetail(i,xIndex)">
+			    		<div style="border-radius: 50%; width:50px; height:50px; overflow: hidden; margin: auto;">
+				    		<img class="product-thumbnail" ng-src="images/prodotti-special-images/prodotti-special-{{x.productsArray[i].nameForImage}}.png">
+				    	</div>
+				    	<p class="product-thumbnail-text" align="center">{{x.productsArray[i].productName}}</p>
+			    	</a>
+			    </div>
+			</div>
+		
+		</div>
+	
+    <div style="height: 30px"></div>
+    </ion-content>
+  </ion-pane>
+</ion-view>

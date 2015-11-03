@@ -1,0 +1,30 @@
+<div id="myleather-modal" class="modal image-modal" ng-click="closeModal()" style="background: rgba(255,255,255,0.80)">
+    <ion-slide-box on-slide-changed="slideChanged(index)" show-pager="false" active-slide="activeSlide">
+        <ion-slide ng-repeat="detailProductImage in detailProductImages">
+        	<div class="row" style="padding-top: 60px;">
+			  <div class="item item-title-myleather-detail item-icon-right">
+			    <p style="color: rgb(124,53,23); font-size: 20px;">{{detailProductImage.categoryName}}</p>
+        		<p style="color: rgb(124,53,23); font-size: 20px;">{{detailProductImage.productName}}</p>
+			    <i class="icon ion-contrast" ng-click="changeBackground()"></i>
+			  </div> 
+			</div>
+			<div>
+				<img ng-src="images/back.png" width="10px" height="25px" class="back-arrow-product-detail" ng-show="!$first"/>
+	        	<img ng-src="images/prodotti-special-images/prodotti-special-{{detailProductImage.productDetailImage}}.png" class="myleather-fullscreen-image"/>
+				<img ng-src="images/forward.png" width="10px" height="25px" class="forward-arrow-product-detail" ng-show="!$last"/>
+			</div>
+			<div class="row row-product-detail">
+			  <a class="col col-contacts" href="fb://profile/655146487898613">
+			  	<img class="contacts-social-image" src="images/contacts/facebook.png" ></img>
+			  </a>
+			  <div class="col col-contacts" ng-click="">
+			  	<img class="myleather-order-image" src="images/campione_icon.png" ></img>
+			  	<p class="richiedi-campione-label">Richiedi campione</p>
+			  </div>
+			  <a class="col col-contacts" href="">
+			  	<img class="contacts-social-image" src="images/contacts/twitter.png" ></img>
+			  </a> 
+			</div>
+		</ion-slide>
+    </ion-slide-box>
+</div>

@@ -1,0 +1,21 @@
+<ion-view>
+	<ion-nav-title>
+      <img src="images/icon_navbar_leather_5.png" height="50px" style="margin-top: 5px;">
+    </ion-nav-title>
+  <ion-pane>
+    <ion-content overflow-scroll="true">
+    <div style="height: 20px"></div>
+     
+    <div class="list list-prodotti" ng-repeat="x in productTypes">
+
+	    <a class="item item-avatar item-prodotti" ng-click="goToProduct({{x.page}})" style={{x.style}}>
+	      <img src="images/prodotti-home-images/{{x.image}}.png" class="image-prodotti-list">
+	      <p class="title">{{x.title}}</h2>
+	      <p class="text-small">{{x.text}}</p>
+	    </a>
+
+	</div>
+    <div style="height: 50px"></div>
+    </ion-content>
+  </ion-pane>
+</ion-view>
